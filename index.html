@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Name Variations</title>
+</head>
+<body>
+  <nav>
+    <h1>Name Variations</h1>
+    <p>Type your name below to see the different variations using string manipulation.</p>
+  </nav>
+ 
+  <main>
+    <div class="container ">
+      <div class="table-card">
+        <div class="table-header">
+          <input class="name-input" type="text" placeholder="Your name" id="yourName">
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Type of variation</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Number of characters</td>
+              <td id="variation1">11</td>
+            </tr>
+            <tr>
+              <td>First character</td>
+              <td id="variation2">11</td>
+            </tr>
+            <tr>
+              <td>Last character</td>
+              <td id="variation3"></td>
+            </tr>
+            <tr>
+              <td>Lowercase characters</td>
+              <td id="variation4"></td>
+            </tr>
+            <tr>
+              <td>Uppercase characters</td>
+              <td id="variation5"></td>
+            </tr>
+            <tr>
+              <td>Capitalize first character</td>
+              <td id="variation6"></td>
+            </tr>
+            <tr>
+              <td>Trim (no leading or trailing spaces)</td>
+              <td id="variation7"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
