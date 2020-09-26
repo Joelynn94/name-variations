@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #EBEEF5;
 }
 
 nav {
@@ -59,7 +60,7 @@ table {
 table th,
 table td {
   padding: 12px 8px;
-  color: #8b92a9
+  color: #E8CCF0
 }
 
 table th {
@@ -95,7 +96,7 @@ table tbody tr:nth-of-type(odd) {
 }
 
 .name-input::placeholder {
-  color: #8b92a9
+  color: #E8CCF0
 }
 
 
