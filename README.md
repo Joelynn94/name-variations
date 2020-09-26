@@ -3,4 +3,4 @@ A table that shows name variations
 
 ### App Demo
 
-![App Demo](name-variations.mp4)
+![App Demo](name-variations.gif)
