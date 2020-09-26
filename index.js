@@ -6,6 +6,7 @@ const variation5 = document.querySelector("#variation5")
 const variation6 = document.querySelector("#variation6")
 const variation7 = document.querySelector("#variation7")
 const variation8 = document.querySelector("#variation8")
+const variation9 = document.querySelector("#variation9")
 
 const name = document.querySelector("#yourName");
 
@@ -44,6 +45,14 @@ function getCapitalized(name) {
   return  name[0].toUpperCase() + name.substring(1).toLowerCase()
 }
 
+function getCapitalizedWords(name) {
+  return name
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
+
 function getTrim(name) {
   // return name without trailing and leading space (example: " alex " becomes: "alex")
   return name.trim()
@@ -63,6 +72,7 @@ name.addEventListener("keyup", () => {
     variation6.textContent = ""
     variation7.textContent = ""
     variation8.textContent = ""
+    variation9.textContent = ""
   } else {
     variation1.textContent = getNumberOfChars(value);
     variation2.textContent = getFirstChar(value);
@@ -71,7 +81,8 @@ name.addEventListener("keyup", () => {
     variation5.textContent = getLowerChar(value);
     variation6.textContent = getUpperChar(value);
     variation7.textContent = getCapitalized(value);
-    variation8.textContent = getTrim(value);
+    variation8.textContent = getCapitalizedWords(value);
+    variation9.textContent = getTrim(value);
   }
 
   console.log(value)
