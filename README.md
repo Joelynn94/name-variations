@@ -3,4 +3,4 @@ A table that shows name variations using string manipulation. Start typing your 
 
 ### App Demo
 
-![App Demo](name-variations.gif)
+![App Demo](name-variations.gif.icloud)
