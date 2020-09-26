@@ -47,13 +47,14 @@ function getCapitalized(name) {
 
 function getCapitalizedWords(name) {
   // return a capitalized version of name (example: "alex winter" becomes "Alex Winter")
+  // get the first letter and capitalize it and return the rest of the name
   return name
     .toLowerCase()
-    .split(', ')
-    // get the first letter and capitalize it and return the rest of the name
+    .split(' ')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 };
+
 
 function getTrim(name) {
   // return name without trailing and leading space (example: " alex " becomes: "alex")
