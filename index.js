@@ -5,6 +5,7 @@ const variation4 = document.querySelector("#variation4")
 const variation5 = document.querySelector("#variation5")
 const variation6 = document.querySelector("#variation6")
 const variation7 = document.querySelector("#variation7")
+const variation8 = document.querySelector("#variation8")
 
 const name = document.querySelector("#yourName");
 
@@ -21,6 +22,11 @@ function getFirstChar(name) {
 function getLastChar(name) {
   // return the last character of: name
   return name[name.length - 1]
+}
+
+function getMiddleChars(name) {
+  // return all characters minus the first and last characters
+  return name.substring(1, name.length - 1)
 }
 
 function getLowerChar(name) {
@@ -56,14 +62,16 @@ name.addEventListener("keyup", () => {
     variation5.textContent = ""
     variation6.textContent = ""
     variation7.textContent = ""
+    variation8.textContent = ""
   } else {
     variation1.textContent = getNumberOfChars(value);
     variation2.textContent = getFirstChar(value);
     variation3.textContent = getLastChar(value);
-    variation4.textContent = getLowerChar(value);
-    variation5.textContent = getUpperChar(value);
-    variation6.textContent = getCapitalized(value);
-    variation7.textContent = getTrim(value);
+    variation4.textContent = getMiddleChars(value);
+    variation5.textContent = getLowerChar(value);
+    variation6.textContent = getUpperChar(value);
+    variation7.textContent = getCapitalized(value);
+    variation8.textContent = getTrim(value);
   }
 
   console.log(value)
