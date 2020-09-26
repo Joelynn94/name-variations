@@ -46,9 +46,11 @@ function getCapitalized(name) {
 }
 
 function getCapitalizedWords(name) {
+  // return a capitalized version of name (example: "alex winter" becomes "Alex Winter")
   return name
     .toLowerCase()
-    .split(' ')
+    .split(', ')
+    // get the first letter and capitalize it and return the rest of the name
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 };
